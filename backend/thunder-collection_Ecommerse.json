@@ -1,0 +1,341 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Ecommerse",
+    "dateExported": "2024-02-22T21:27:26.519Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "e457f656-fd17-48dc-985d-a59551625549",
+            "name": "Backend",
+            "containerId": "",
+            "created": "2024-02-02T18:32:20.297Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "c26b9a92-f230-428a-871c-d77d64cbf696",
+            "name": "Auth",
+            "containerId": "e457f656-fd17-48dc-985d-a59551625549",
+            "created": "2024-02-02T18:32:28.372Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "5379b2bd-4b1d-4c17-b5b8-9a0a8dff45b1",
+            "name": "Products",
+            "containerId": "e457f656-fd17-48dc-985d-a59551625549",
+            "created": "2024-02-03T17:41:41.080Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "e3c5a83a-2158-4473-9c2c-78267da0d316",
+            "name": "User",
+            "containerId": "e457f656-fd17-48dc-985d-a59551625549",
+            "created": "2024-02-19T22:18:56.428Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "9d17445d-d37b-43c9-8efe-4ad8395d13dd",
+            "name": "Admin",
+            "containerId": "e457f656-fd17-48dc-985d-a59551625549",
+            "created": "2024-02-20T11:54:21.680Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "3411dcf8-bf15-439a-8614-9bcef365db05",
+            "name": "Reviews",
+            "containerId": "e457f656-fd17-48dc-985d-a59551625549",
+            "created": "2024-02-20T15:51:44.316Z",
+            "sortNum": 60000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "ea3d4751-c2bc-4ccd-849e-6b774ed9ec6d",
+            "colId": "ca625fd8-71d7-4d7c-915a-e3fcd062892e",
+            "containerId": "c26b9a92-f230-428a-871c-d77d64cbf696",
+            "name": "signin",
+            "url": "http://localhost:8000/api/user/signin",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-02T18:32:35.404Z",
+            "modified": "2024-02-22T19:45:55.954Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"fullName\": \"Ahmed Shoaib\",\n  \"username\": \"ahmedshoaib\",\n  \"email\": \"ahmedshoaib@gmail.com\",\n  \"password\": \"secret\",\n  \"avator\": \"http://test.png\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1b068a72-e237-433b-b932-52b636ff54ac",
+            "colId": "ca625fd8-71d7-4d7c-915a-e3fcd062892e",
+            "containerId": "9d17445d-d37b-43c9-8efe-4ad8395d13dd",
+            "name": "(admin) allUsers",
+            "url": "http://localhost:8000/admin/all-users",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-02-20T11:54:30.401Z",
+            "modified": "2024-02-20T11:55:27.199Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7a9fccb1-f70e-4a5d-bcba-f897d23f4efd",
+            "colId": "ca625fd8-71d7-4d7c-915a-e3fcd062892e",
+            "containerId": "5379b2bd-4b1d-4c17-b5b8-9a0a8dff45b1",
+            "name": "create-products",
+            "url": "http://localhost:8000/api/products/create",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-03T17:43:31.179Z",
+            "modified": "2024-02-21T17:35:34.428Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Vivo10\",\n  \"description\": \"this is new model in 2024\",\n  \"price\": 44000,\n  \"images\": [\n    {\n      \"img\": \"vivo.png\"\n    }\n  ],\n  \"category\": \"mobile\",\n  \"reviews\": [\n    {\n      \"name\": \"\",\n      \"comment\": \"\",\n      \"rating\": \"\"\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d1fef0ee-18d6-40b4-84f1-44421819e37c",
+            "colId": "ca625fd8-71d7-4d7c-915a-e3fcd062892e",
+            "containerId": "c26b9a92-f230-428a-871c-d77d64cbf696",
+            "name": "login",
+            "url": "http://localhost:8000/api/user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-16T16:04:34.356Z",
+            "modified": "2024-02-22T19:46:09.757Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"ahmedshoaib\",\n  \"password\": \"secret\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a5c5b3b3-af67-411d-b77e-b227b39aabae",
+            "colId": "ca625fd8-71d7-4d7c-915a-e3fcd062892e",
+            "containerId": "9d17445d-d37b-43c9-8efe-4ad8395d13dd",
+            "name": "(admin) singleUser",
+            "url": "http://localhost:8000/admin/single-user/65bd41df3de27deba904f8de",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-20T12:05:00.936Z",
+            "modified": "2024-02-20T12:12:16.324Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ac9f3908-0b35-4bff-bffc-a66e9e9845bb",
+            "colId": "ca625fd8-71d7-4d7c-915a-e3fcd062892e",
+            "containerId": "5379b2bd-4b1d-4c17-b5b8-9a0a8dff45b1",
+            "name": "readAll-products",
+            "url": "http://localhost:8000/api/products/read",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-03T18:09:11.120Z",
+            "modified": "2024-02-18T10:58:21.933Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "keyword",
+                    "value": "Vivo  ",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "rating",
+                    "value": "0",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "price[gt]",
+                    "value": "31000",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "price[lt]",
+                    "value": "42000",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "759dbf83-33be-49fe-b7ed-e180e92339f5",
+            "colId": "ca625fd8-71d7-4d7c-915a-e3fcd062892e",
+            "containerId": "c26b9a92-f230-428a-871c-d77d64cbf696",
+            "name": "logout",
+            "url": "http://localhost:8000/api/user/logout",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-18T10:52:55.736Z",
+            "modified": "2024-02-18T10:53:28.317Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "51567aa4-f3f7-4d90-87a9-035e7a3188f1",
+            "colId": "ca625fd8-71d7-4d7c-915a-e3fcd062892e",
+            "containerId": "9d17445d-d37b-43c9-8efe-4ad8395d13dd",
+            "name": "(admin) updateUser",
+            "url": "http://localhost:8000/admin/update-user-role/65bd41df3de27deba904f8de",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-02-20T12:14:27.968Z",
+            "modified": "2024-02-20T12:25:34.333Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"role\": \"admin\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3088a842-8d89-4254-986e-b54cd9a2e2fe",
+            "colId": "ca625fd8-71d7-4d7c-915a-e3fcd062892e",
+            "containerId": "5379b2bd-4b1d-4c17-b5b8-9a0a8dff45b1",
+            "name": "update-product",
+            "url": "http://localhost:8000/api/products/update-product/65b530d767a64220d0a61df0",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-03T18:14:27.353Z",
+            "modified": "2024-02-03T18:17:10.705Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Techno Spark 10 C\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3bf57807-51b5-4d46-ae6a-8a7db59da043",
+            "colId": "ca625fd8-71d7-4d7c-915a-e3fcd062892e",
+            "containerId": "9d17445d-d37b-43c9-8efe-4ad8395d13dd",
+            "name": "(admin) deleteUser",
+            "url": "http://localhost:8000/admin/delete-user/65bd41df3de27deba904f8de",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-02-20T12:24:28.127Z",
+            "modified": "2024-02-20T12:25:01.104Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4535eada-cdc1-4c7d-8576-06170c3e1dd6",
+            "colId": "ca625fd8-71d7-4d7c-915a-e3fcd062892e",
+            "containerId": "5379b2bd-4b1d-4c17-b5b8-9a0a8dff45b1",
+            "name": "delete-product",
+            "url": "http://localhost:8000/api/products/delete/65d140b731139d871edf03c2",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-02-03T18:17:39.892Z",
+            "modified": "2024-02-18T11:00:11.034Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2bb29204-ec91-4dc7-aff3-47ca914c7e25",
+            "colId": "ca625fd8-71d7-4d7c-915a-e3fcd062892e",
+            "containerId": "5379b2bd-4b1d-4c17-b5b8-9a0a8dff45b1",
+            "name": "single-product",
+            "url": "http://localhost:8000/api/products/single-product/342sasdfasdf",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-02-03T18:18:59.115Z",
+            "modified": "2024-02-17T16:08:53.076Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "63f7a966-1822-4117-aab5-03e89b71eb7c",
+            "colId": "ca625fd8-71d7-4d7c-915a-e3fcd062892e",
+            "containerId": "e3c5a83a-2158-4473-9c2c-78267da0d316",
+            "name": "userProfile",
+            "url": "http://localhost:8000/me/profile",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-02-19T22:19:21.621Z",
+            "modified": "2024-02-19T22:20:09.570Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6820e9cc-c1fa-4d4b-8002-a5a9af3d335d",
+            "colId": "ca625fd8-71d7-4d7c-915a-e3fcd062892e",
+            "containerId": "e3c5a83a-2158-4473-9c2c-78267da0d316",
+            "name": "changePassword",
+            "url": "http://localhost:8000/me/change/password",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-02-19T22:28:18.181Z",
+            "modified": "2024-02-20T11:24:25.755Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"oldPassword\" : \"secret\",\n  \"newPassword\": \"dilawar\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "00444bd7-dd4c-44e5-8164-b3f86d74eef7",
+            "colId": "ca625fd8-71d7-4d7c-915a-e3fcd062892e",
+            "containerId": "3411dcf8-bf15-439a-8614-9bcef365db05",
+            "name": "reviews",
+            "url": "http://localhost:8000/review",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-02-20T15:51:55.743Z",
+            "modified": "2024-02-22T19:46:56.551Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"productId\": \"65d7a19c0589686924b7b686\",\n  \"name\": \"Shoaib\",\n  \"comment\": \"wa g nice \",\n  \"rating\":6\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "75fd5373-66fc-4dae-abde-b8e0138a31bc",
+            "colId": "ca625fd8-71d7-4d7c-915a-e3fcd062892e",
+            "containerId": "e3c5a83a-2158-4473-9c2c-78267da0d316",
+            "name": "updateProfile",
+            "url": "http://localhost:8000/me/update/profile",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-02-20T11:26:24.891Z",
+            "modified": "2024-02-20T11:34:49.064Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"fullName\": \"Dilawar khan\",\n  \"username\": \"dilawarkhan\",\n  \"role\": \"admin\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
